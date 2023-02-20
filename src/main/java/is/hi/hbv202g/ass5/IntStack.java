@@ -52,7 +52,17 @@ public class IntStack {
         }
     }
 
-    // TODO: Add isEmpty() method
+    /**
+     * Returns whether the stack is empty.
+     * @return true if the stack is empty, false if the stack is not empty
+     */
+    public boolean isEmpty() {
+        if (nextPushLocation == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     /**
      * Push on int on the stack.
